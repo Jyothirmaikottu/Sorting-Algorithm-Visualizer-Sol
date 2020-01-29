@@ -14,13 +14,11 @@ def test(sorting_function):
     sorting_function(arr)
     try:
         assert is_sorted(arr.values), sorting_function.__name__ + ' Failed.'
-    except AssertionError:
-        tc.print_exc()
-        return 'FAIL'
+    except AssertionError as msg:  
+        print(msg) 
     return 'Passed'
 
 
-functions = [s.bubble_sort, s.heap_sort, s.selection_sort,
-             s.insertion_sort, s.quick_sort, s.merge_sort]
+functions = [s.cycle_sort, s.shell_sort, s.comb_sort, s.pigeonhole_sort]
 for function in functions:
-    print('Testing:   ', function.__name__.ljust(16), test(function))
+    print('Testing:   ', function.__name__.ljust(17), test(function))
