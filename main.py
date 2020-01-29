@@ -13,7 +13,7 @@ def get_random_array(length):
 
 array_size = 50
 
-algorithms = [s.cycle_sort, s.shell_sort, s.comb_sort, s.pigeonhole_sort]
+algorithms = [s.cycle_sort, s.shell_sort, s.comb_sort, s.pigeonhole_sort, s.tim_sort]
 
 if len(sys.argv) < 2:
     print('Usage:', 'python', sys.argv[0], 'function_name', '\n')

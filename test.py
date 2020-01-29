@@ -19,6 +19,6 @@ def test(sorting_function):
     return 'Passed'
 
 
-functions = [s.cycle_sort, s.shell_sort, s.comb_sort, s.pigeonhole_sort]
+functions = [s.cycle_sort, s.shell_sort, s.comb_sort, s.pigeonhole_sort, s.tim_sort]
 for function in functions:
     print('Testing:   ', function.__name__.ljust(17), test(function))
